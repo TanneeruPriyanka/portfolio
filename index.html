@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Priyanka Tanneeru | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+  <style>
+    .hidden-content {
+      max-height: 0;
+      opacity: 0;
+      overflow: hidden;
+      transition: all 0.5s ease;
+    }
+    .hidden-content.show {
+      max-height: 1000px; /* enough to show content */
+      opacity: 1;
+    }
+  </style>
+
+  <script>
+    function toggleCaseStudy(id) {
+      const el = document.getElementById(id);
+      el.classList.toggle("show");
+    }
+  </script>
+</head>
+<body class="bg-gradient-to-b from-indigo-50 to-white text-gray-900">
+
+  <!-- Header -->
+  <header class="p-8 flex flex-col items-center text-center">
+    <h1 class="text-5xl font-bold mb-3 text-indigo-700">Priyanka Tanneeru</h1>
+    <p class="text-lg text-gray-700 max-w-2xl">
+      Marketing Communications Specialist passionate about 
+      <span class="font-semibold">brand positioning, SEO optimization, and storytelling</span> 
+      that drives visibility, trust, and conversions in the SaaS and tech space.
+    </p>
+    <div class="flex gap-4 mt-6">
+      <a href="mailto:gunjapriyanka611@gmail.com?subject=Portfolio%20Enquiry&body=Hello%20Priyanka," 
+         class="px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700">
+        <i class="fa-solid fa-envelope"></i> Contact
+      </a>
+      <a href="https://www.linkedin.com/in/tanneeru-priyanka/" target="_blank" 
+         class="px-4 py-2 border border-indigo-600 text-indigo-700 rounded-lg hover:bg-indigo-50">
+        <i class="fa-brands fa-linkedin"></i> LinkedIn
+      </a>
+    </div>
+  </header>
+
+  <!-- Strengths -->
+  <section class="px-6 py-12 max-w-6xl mx-auto">
+    <h2 class="text-3xl font-semibold mb-10 text-center text-indigo-800">Core Strengths</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-white shadow-xl rounded-2xl p-6 text-center border">
+        <i class="fa-solid fa-pen-nib text-indigo-600 text-3xl mb-3"></i>
+        <h3 class="font-semibold mb-2 text-lg">Content & Storytelling</h3>
+        <p class="text-sm text-gray-600">Developing compelling narratives and thought leadership content that position brands and leaders as industry authorities.</p>
+      </div>
+      <div class="bg-white shadow-xl rounded-2xl p-6 text-center border">
+        <i class="fa-solid fa-chart-line text-indigo-600 text-3xl mb-3"></i>
+        <h3 class="font-semibold mb-2 text-lg">SEO & Inbound Growth</h3>
+        <p class="text-sm text-gray-600">Boosting organic visibility through SEO-optimized blogs, whitepapers, and landing pages designed to attract and convert leads.</p>
+      </div>
+      <div class="bg-white shadow-xl rounded-2xl p-6 text-center border">
+        <i class="fa-solid fa-globe text-indigo-600 text-3xl mb-3"></i>
+        <h3 class="font-semibold mb-2 text-lg">Brand Positioning</h3>
+        <p class="text-sm text-gray-600">Designing communication strategies that build credibility, enhance engagement, and differentiate brands in competitive SaaS markets.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section class="px-6 py-12 bg-white">
+    <h2 class="text-3xl font-semibold mb-10 text-center text-indigo-800">Experience Highlights</h2>
+    <div class="grid gap-8 max-w-5xl mx-auto">
+      <div class="bg-white shadow-lg rounded-xl p-6 border">
+        <h3 class="font-semibold text-lg">Marketing Executive – Recykal</h3>
+        <p class="text-sm text-gray-500 mb-3">Apr 2025 – Present</p>
+        <ul class="list-disc ml-5 text-sm text-gray-700 space-y-2">
+          <li>Executed targeted B2B campaigns increasing open rates to 20% and CTR to 3%.</li>
+          <li>Developed automated HubSpot workflows to strengthen positioning efforts.</li>
+          <li>Optimized campaign content for SEO, enhancing organic reach.</li>
+        </ul>
+      </div>
+      <div class="bg-white shadow-lg rounded-xl p-6 border">
+        <h3 class="font-semibold text-lg">Marketing & Performance Analyst – AI Growth Pvt Ltd.</h3>
+        <p class="text-sm text-gray-500 mb-3">Apr 2024 – Feb 2025</p>
+        <ul class="list-disc ml-5 text-sm text-gray-700 space-y-2">
+          <li>Designed SEO-driven campaigns that improved search visibility.</li>
+          <li>Enhanced WhatsApp marketing open rates by 15%.</li>
+          <li>Built dashboards to optimize campaign messaging.</li>
+        </ul>
+      </div>
+      <div class="bg-white shadow-lg rounded-xl p-6 border">
+        <h3 class="font-semibold text-lg">Marketing Ops & Performance Analyst – Codingal</h3>
+        <p class="text-sm text-gray-500 mb-3">Dec 2022 – Mar 2024</p>
+        <ul class="list-disc ml-5 text-sm text-gray-700 space-y-2">
+          <li>Developed dashboards to track brand communication effectiveness.</li>
+          <li>Created performance reports guiding positioning strategies.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Case Studies -->
+  <section class="px-6 py-12 max-w-5xl mx-auto">
+    <h2 class="text-3xl font-semibold mb-8 text-center text-indigo-800">Case Studies & Past Work</h2>
+    <div class="grid md:grid-cols-2 gap-8">
+
+      <!-- SEO Case Study -->
+<div class="bg-indigo-50 p-6 rounded-xl shadow transition hover:shadow-2xl hover:scale-[1.02]">
+  <i class="fa-solid fa-file-lines text-indigo-600 text-2xl mb-3"></i>
+  <h3 class="font-semibold mb-2">SEO Case Study: Fintech SaaS </h3>
+  <p class="text-sm text-gray-700 mb-4">
+    Repositioning from a loan-focused fintech tool to a secure investment platform, 
+    using SEO optimization and trust-driven messaging to attract a more relevant, high-value audience.
+  </p>
+  <button onclick="toggleCaseStudy('seo-details')" 
+          class="px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition transform hover:scale-105">
+    View Details
+  </button>
+  <div id="seo-details" class="hidden-content mt-4 text-sm text-gray-700 space-y-3">
+    <p><strong>Context:</strong> A fintech SaaS company, wanted to shift its positioning from being seen as a <em>loan disbursement tool</em> to a <em>secure investment platform</em>, emphasizing data security and banking-grade compliance to win investor trust.</p>
+    
+    <p><strong>Challenges:</strong></p>
+    <ul class="list-disc ml-6">
+      <li>Search visibility leaned heavily on loan-related keywords, attracting the wrong audience.</li>
+      <li>Perception gap — potential investors saw the platform as “financing/loans” rather than an investment growth solution.</li>
+      <li>Lack of emphasis on <strong>security</strong> in messaging, despite banking-grade safeguards.</li>
+    </ul>
+    
+    <p><strong>Approach:</strong></p>
+    <ul class="list-disc ml-6">
+      <li>Researched investment-focused and security-driven keywords (e.g., <em>secure investment SaaS</em>, <em>AI investment platform</em>, <em>bank-level security fintech</em>).</li>
+      <li>Rebuilt landing pages and product copy to emphasize <strong>security, compliance, and ROI</strong>.</li>
+      <li>Optimized speed upgrades.</li>
+      <li>Created new content pillars: investment guides, security whitepapers, and comparison articles.</li>
+    </ul>
+    
+    <p><strong>Results:</strong></p>
+    <ul class="list-disc ml-6">
+      <li>+35% increase in organic traffic within 3 months, with a shift towards <em>investment-focused keywords</em>.</li>
+      <li>Inbound leads improved in quality, with <strong>19% more sign-ups</strong> from investors and security-conscious users.</li>
+      <li>Ranked on page 1 for niche keywords like <em>secure fintech investment platform</em> and <em>AI-driven investment SaaS</em>.</li>
+      <li>Brand repositioning shifted perception — investors highlighted <strong>security & trust</strong> as reasons for engaging.</li>
+    </ul>
+  </div>
+</div>
+
+
+      <!-- Brand Positioning Case Study Card -->
+      <!-- Brand Positioning Case Study -->
+<div class="bg-indigo-50 p-6 rounded-xl shadow transition hover:shadow-2xl hover:scale-[1.02]">
+  <i class="fa-solid fa-file-lines text-indigo-600 text-2xl mb-3"></i>
+  <h3 class="font-semibold mb-2">Brand Positioning: Clean-Tech SaaS </h3>
+  <p class="text-sm text-gray-700 mb-4">
+    Repositioned from being seen as just another <strong>PRO (Producer Responsibility Organization)</strong> 
+    to a trusted <strong>end-to-end compliance partner</strong>, enabling clients to seamlessly manage EPR obligations 
+    with transparency and accountability.
+  </p>
+  <button onclick="toggleCaseStudy('brand-details')" 
+          class="px-4 py-2 border border-indigo-600 text-indigo-700 rounded-lg hover:bg-indigo-50 transition transform hover:scale-105">
+    View Details
+  </button>
+  <div id="brand-details" class="hidden-content mt-4 text-sm text-gray-700 space-y-3">
+    <p><strong>Context:</strong> leading clean-tech platform, wanted to differentiate itself in the EPR 
+       (Extended Producer Responsibility) ecosystem. Many brands perceived PROs as transactional, but 
+       Recykal aimed to position itself as a <em>responsible, compliant, and long-term partner</em> that could 
+       simplify complex compliance challenges for enterprises.</p>
+
+    <p><strong>Challenges:</strong></p>
+    <ul class="list-disc ml-6">
+      <li>Perception of being “just another PRO” offering generic EPR services.</li>
+      <li>Clients struggled to trust providers due to compliance risks and lack of transparency in reporting.</li>
+      <li>Market flooded with smaller players offering low-cost but unreliable compliance solutions.</li>
+    </ul>
+
+    <p><strong>Approach:</strong></p>
+    <ul class="list-disc ml-6">
+      <li>Developed a <strong>brand positioning framework</strong> emphasizing compliance, responsibility, and partnership.</li>
+      <li>Shifted messaging from “services offered” to <em>“trusted partner who ensures seamless end-to-end compliance.”</em></li>
+      <li>Created thought leadership content (articles, webinars, whitepapers) highlighting commitment to 
+          compliance excellence, government alignment, and sustainable outcomes.</li>
+      <li>Designed sales and marketing collaterals that focused on <strong>trust, transparency, and accountability</strong> rather than transactional services.</li>
+      <li>Collaborated with design to ensure visuals reinforced the identity as a compliance-first partner.</li>
+    </ul>
+
+ 
+   <p><strong>Results:</strong></p>
+    <ul class="list-disc ml-6">
+      <li>Strengthened perception as a <strong>compliance-focused partner</strong> among enterprise clients.</li>
+      <li>30% increase in engagement with thought leadership campaigns around EPR and compliance responsibility.</li>
+      <li>Secured new partnerships with FMCG and electronics companies citing “compliance reliability” as a key differentiator.</li>
+      <li>Established credibility in government and industry forums as a leader in <em>end-to-end EPR compliance management</em>.</li>
+    </ul>
+  </div>
+</div>
+
+  </section>
+
+  <!-- Skills -->
+  <section class="px-6 py-12 max-w-5xl mx-auto">
+    <h2 class="text-3xl font-semibold mb-8 text-center text-indigo-800">Skills & Tools</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+      <span class="bg-indigo-100 px-3 py-2 rounded-lg text-sm text-indigo-800 font-medium">HubSpot</span>
+      <span class="bg-indigo-100 px-3 py-2 rounded-lg text-sm text-indigo-800 font-medium">Mailchimp</span>
+      <span class="bg-indigo-100 px-3 py-2 rounded-lg text-sm text-indigo-800 font-medium">SEO Optimization</span>
+      <span class="bg-indigo-100 px-3 py-2 rounded-lg text-sm text-indigo-800 font-medium">Brand Positioning</span>
+      <span class="bg-indigo-100 px-3 py-2 rounded-lg text-sm text-indigo-800 font-medium">Content Strategy</span>
+      <span class="bg-indigo-100 px-3 py-2 rounded-lg text-sm text-indigo-800 font-medium">Performance Marketing</span>
+      <span class="bg-indigo-100 px-3 py-2 rounded-lg text-sm text-indigo-800 font-medium">HTML</span>
+      <span class="bg-indigo-100 px-3 py-2 rounded-lg text-sm text-indigo-800 font-medium">CSS</span>
+      <span class="bg-indigo-100 px-3 py-2 rounded-lg text-sm text-indigo-800 font-medium">JS</span>
+
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section class="px-6 py-12 bg-white text-center">
+    <h2 class="text-3xl font-semibold mb-4 text-indigo-800">Education</h2>
+    <p class="text-gray-700">Bachelor of Food Technology – Vignan’s Foundation for Science, Tech & Research</p>
+    <p class="text-gray-500">GPA: 9.14 / 10</p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="p-6 text-center text-sm text-gray-600 bg-indigo-50">
+    © 2025 Priyanka Tanneeru | Driving Growth through Brand Positioning & SEO Excellence
+  </footer>
+
+</body>
+</html>
